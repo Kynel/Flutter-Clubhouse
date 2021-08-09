@@ -52,10 +52,12 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: UserProfileImage(
-          imageUrl: currentUser.imageUrl,
-          size: 60,
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 120.0),
+        child: ListView(
+          children: [
+            UpcomingRooms(upcomingRooms: upcomingRoomsList),
+          ],
         ),
       ),
     );
