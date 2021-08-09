@@ -1,2 +1,2 @@
-# Flutter-Netflix
-Flutter netflix clone project for fun!
+# Flutter-Clubhouse
+Flutter clubhouse clone project for fun!
