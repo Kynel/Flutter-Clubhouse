@@ -42,16 +42,18 @@ class UpcomingRooms extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             if (e.club.isNotEmpty)
-                              Text(
-                                '${e.club} 🏠 '.toUpperCase(),
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .overline!
-                                    .copyWith(
-                                      fontWeight: FontWeight.w600,
-                                      letterSpacing: 1.0,
-                                    ),
-                                overflow: TextOverflow.ellipsis,
+                              Flexible(
+                                child: Text(
+                                  '${e.club} 🏠 '.toUpperCase(),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .overline!
+                                      .copyWith(
+                                        fontWeight: FontWeight.w600,
+                                        letterSpacing: 1.0,
+                                      ),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
                               ),
                             Flexible(
                               child: Text(
